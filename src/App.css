@@ -119,3 +119,13 @@ div.card-footer:hover {
   margin: 0.5rem;
   padding: 0.3rem;
 }
+
+.page-footer {
+  background: #e3f2fd;
+}
+.page-footer a {
+  color: #6b7e8b;
+}
+.page-footer ul {
+  display: inline;
+}
