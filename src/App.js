@@ -10,21 +10,27 @@ import Modal from "./components/Modal";
 import Footer from "./components/Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle";
+import { BrowserRouter as Router } from "react-router-dom";
+import { ProductProvider } from "./context";
 
 class App extends Component {
   render() {
     return (
-      <React.Fragment>
-        <Navbar />
-        <Switch>
-          <Route path="/" component={ProductList} exact />
-          <Route path="/details" component={Details} />
-          <Route path="/cart" component={Cart} />
-          <Route component={Default} />
-        </Switch>
-        <Modal />
-        <Footer />
-      </React.Fragment>
+      <ProductProvider>
+        <Router>
+          <React.Fragment>
+            <Navbar />
+            <Switch>
+              <Route path="/" component={ProductList} exact />
+              <Route path="/details" component={Details} />
+              <Route path="/cart" component={Cart} />
+              <Route component={Default} />
+            </Switch>
+            <Modal />
+            <Footer />
+          </React.Fragment>
+        </Router>
+      </ProductProvider>
     );
   }
 }

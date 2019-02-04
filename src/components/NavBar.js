@@ -45,14 +45,14 @@ export default class NavBar extends Component {
                 </a>
                 <div className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <a className="dropdown-item" href="#action">
-                    Action
+                    About Us
                   </a>
                   <a className="dropdown-item" href="#another">
-                    Another action
+                    Contact Us
                   </a>
                   <div className="dropdown-divider" />
                   <a className="dropdown-item" href="#somthing">
-                    Something else here
+                    Careers
                   </a>
                 </div>
               </li>
